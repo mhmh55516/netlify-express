@@ -135,7 +135,9 @@ xmpp.on('chat', function(from, message) {
   //xmpp.send('+2'+requestx+'@5222.de', 'hello! time is '+new Date(), false);
 });
 
-
+app.get("/", (requestx, responsex) => {
+  responsex.end("hi")
+});
 
 app.post("/sms2", (requestx, responsex) => {
 var phones=['12893240945','18077007598','18077006637','18076999534','18077005813','17054141192']
